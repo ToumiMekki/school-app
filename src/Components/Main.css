@@ -1,0 +1,2127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+
+:root{
+    --body-color:#EEEEEE;
+    --first-color:#FFF;
+    --first-font-color:#505050;
+    --secend-font-color:#a81253;
+    --Logo-color:#F79321;
+    --red-color:#FC5753;
+    --green-color:#0DB229;
+    --table-color:#505050;
+    --table-text:#ffffff;
+    --secend-text:#a81253;
+    --sidebar-width: 180px;
+    --button-width:160px;
+    --sidebar-font:17px;
+    --Logo-font:27px;
+    --container-width:165px;
+    --container-hight:75px;
+    --speed-left:72%;
+    --menu-right:670px;
+    --PayEtud-width:790px;
+    --Pointing-width:1140px;
+    --MainStud-width:80%;
+    --MainStud-left:230px;
+    --Stud-list-width:85%;
+    --Stud-list-left:195px;
+    --Stud-title-left:200px;
+    --left-button-form:550px;
+    --Prof-container-height:120px;
+    --Prof-container-width:220px;
+    --Prof-container-left:500px;
+    --Prof-container-top:60px;
+    --cours-Main-left:770px;
+    --cours-Main-top:110px;
+    --cours-left:200px;
+    --cours-top:-500px;
+    --cours-width:40%;
+    --cours-height:600px;
+    --total-cours-width:235px;
+    --total-cours-height:140px;
+    --text-h1-cours-left:220px;
+    --Main-class_left:50px;
+    --Main-class_Top:30px;
+    --BigContainer-class_width:1100px;
+    --BigContainer-class_height:650px;
+    --Container-class_width:222px;
+    --Container-class_height:150px;
+    --Err-statut:none;
+    --logo-footer-left:200px;
+    --Container-class_width_hover:223px;
+    --Container-class_height_hover:151px;
+    --logo-type:inline;
+    --admin-name-right:300px;
+    --item6-left:180px;
+
+
+}
+.dark{
+    --body-color:#161616;
+    --first-color:#1B1B1B;
+    --secend-text:#ffdbb3;
+    --secend-font-color:#ffdbb3;
+    --Logo-color:#F79321;
+    --red-color:#ff0400;
+    --green-color:#0DB229;
+
+}
+.full{
+    --sidebar-width: 50px;
+    --button-width:42px;
+    --sidebar-font:0px;
+    --Logo-font:0px;
+    --container-width:190px;
+    --container-hight:85px;
+    --speed-left:83%;
+    --menu-right:800px;
+    --PayEtud-width:920px;
+    --Pointing-width:1270px;
+    --MainStud-width:90%;
+    --MainStud-left:95px;
+    --Stud-list-width:93%;
+    --Stud-list-left:70px;
+    --Stud-title-left:70px;
+    --left-button-form:680px;
+    --Prof-container-left:400px;
+    --Prof-container-top:60px;
+    --Total-cours-left:60px;
+    --cours-width:50%;
+    --total-cours-width:195px;
+    --total-cours-height:150px;
+    --cours-left:70px;
+    --cours-top:-500px;
+    --text-h1-cours-left:100px;
+    --Main-class_left:-10px;
+    --Main-class_Top:30px;
+    --BigContainer-class_width:1100px;
+    --BigContainer-class_height:650px;
+    --Container-class_width:222px;
+    --Container-class_height:150px;
+    --logo-footer-left:70px;
+    --logo-type:none;
+    --admin-name-right:370px;
+    --item6-left:150px;
+
+
+}
+
+.Error{
+    --Err-statut:inline;
+
+}
+
+
+body{
+    background-color: var(--body-color);
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    color: var(--first-font-color);
+}
+.Navbar{
+    background-color: var(--first-color);
+    color: var(--first-font-color);
+    width:100%; height: 55px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: fixed;
+    top: 20px;
+}
+.Navbar ul{
+    list-style: none;
+}
+.Navbar li {
+    display: inline-flex;
+    padding: 20px;
+    float: right;
+}
+
+.Footer{
+    background-color: var(--first-color);
+    width: 100%; height: 40px;
+    margin-top: 70px;
+    position:relative;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+}
+.Footer logo{
+    position: absolute;
+    top: 10px;
+    left: var(--logo-footer-left);
+    font-size: 20px;
+    color: var(--Logo-color);
+}
+logo img{
+    width: 60px
+}
+.Copyright{
+    position: relative;
+    bottom: -10px; left: 1050px;
+    font-size: 15px;
+    color: var(--first-font-color);
+    opacity: 0.7;
+}
+
+.Main_dash{
+    width: 85%; height: 100%;
+    position: relative;
+    left: var(--sidebar-width); top: 70px;
+    min-height: calc(0vh - 0px - 0px);
+}
+.Main_dash h1{
+    padding-left: 20px;
+    padding-top: 15px;
+
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top , #ff0000a9 , #ff00629a);
+    height: 60%;
+  }
+  hr{
+      width: 120%; margin-top: 0px;margin-bottom: 20px; position: relative;left: 0;
+  }
+  .container{
+      background: var(--first-color);
+      width: var(--container-width); height: var(--container-hight);
+      padding: 15px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+      color: var(--secend-font-color);
+      text-align: center;
+}
+.container h4{
+    font-size: 19px;
+    font-weight: 900;
+}
+.container h2{
+    padding-top: 10px;
+    font-size: 28px;
+}
+.container:hover{
+    background: var(--secend-font-color);
+    color: white;
+}
+  .Container_Total ul{
+      display: inline-flex;
+      list-style-type: none;
+  }
+  .speed_access{
+      background: var(--first-color);
+      box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+      width: 330px; height: 420px;
+      position: relative;
+      left:var(--speed-left);
+      border-radius: 30px;
+      display: inline-flexbox;
+  }
+  .speed_access h1{
+    position: relative;
+    top: 10px; left: 45px;
+    color: var(--first-font-color);
+    opacity: 0.5;
+  }
+  .speed_access button {
+      width: 150px; height: 150px;
+      margin: 5px;
+      position: relative;
+      top: 30px; left: 4px;
+      border-radius: 40px;
+      border: none;
+      background: var(--first-color);
+      font-size: 18px;
+      color: var(--secend-font-color);
+      font-family: 'Ubuntu', sans-serif;
+      font: bold;
+
+  }
+  .speed_access img{
+      width: 65px;
+  }
+  .speed_access button:hover{
+      background: var(--secend-font-color);
+      color: var(--first-color);
+}    
+
+/* ================SideBar Style=================== */
+.sideBar{
+    background-color: var(--first-color);
+    height: 100%; width: var(--sidebar-width);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0; top: 22px;
+    z-index: 2;
+
+}
+.sideBar ul{
+    display: block;
+    list-style-type: none;
+    position: relative;
+    top: 150px; left: 5px;
+
+
+}
+.Side img{
+    width: 23px;
+    float: left;
+}
+.logo{
+    position: relative;
+    left:23px; top: 50px;
+    width: 120px;
+    display: var(--logo-type);
+}
+.logoName{
+    position: absolute;
+    left:12px; top: 100px;
+    display: var(--logo-type);
+    color: var(--Logo-color);
+    font: bolder;
+}
+.sideBar button{
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font: bold;
+    width: var(--button-width);
+    font-size: var(--sidebar-font);
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    background: var(--first-color);
+    color: var(--secend-font-color);
+}
+.sideBar button:hover{
+    background: var(--secend-font-color);
+    color: white;
+    transition: 700ms;
+}
+.sideBar li{
+    padding-top: 15px;
+}
+
+.sideBar h2{
+    color: var(--Logo-color);
+    position: relative;
+    font-size: var(--Logo-font);
+    top: 50px; left: 20px;
+    font-weight: bold;
+}
+
+/* ================Navbat Style=================== */
+
+.Services{
+    width: 24px;
+}
+.img_profile{
+    width: 30px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--first-font-color);
+    -webkit-transition: .4s;
+    transition: .4s;  
+}
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: var(--Logo-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+
+  }
+  
+  input:checked + .slider {
+    background-color: var(--secend-font-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--secend-font-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .dark-mode-img{
+      width: 20px;
+      margin-left: 3px;
+  }
+  .light-mode-img{
+    width: 22px;
+    margin-right: 7px;
+  }
+  .menu{
+      width: 25px;
+  }
+  .item1{
+    position: relative;
+    right: 20px;
+  }
+  .item1  img:hover{
+      width: 25px;
+}
+
+  .item2{
+    position: relative;
+    right: 30px; bottom: 5px;
+  }
+  .item2  img:hover{
+    width: 32px;
+}
+
+  .item3{
+    position: relative;
+    right: 50px;
+
+  }
+  .item4{
+    position: relative;
+    right: var(--admin-name-right);
+
+  }
+  .item5{
+    position: relative;
+    right: var(--menu-right);
+  }
+  .item5  img:hover{
+    width: 27px;
+}
+.english{
+    width: 20px;
+    margin: -10px;
+    border-radius:50%;
+}
+.english:hover{
+    width: 22px;
+    box-shadow: 0px 0px 10px 3px #F79321;
+}
+.item6{
+    position: relative;
+    left:var(--item6-left); top: 10px;
+}
+/*=========================== New_student =============================*/
+
+.New_student{
+    background-color: var(--first-color);
+    position: fixed;
+    z-index: 6;
+    width: 560px; height: 650px;
+    border-radius: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.Multiselect{
+    width: 300px;
+    position: relative;
+    left: 250px;
+    top: -235px;
+    border-radius: 20px;
+    border: none;
+}
+
+.scroll_bg{
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 0px 3000px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    bottom: 40px; right: 400px;
+    z-index: 5;
+    width: 560px; height: 650px;
+    border-radius: 50px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+.New_student::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 50px;
+}
+
+.New_student::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.New_student .Close{
+    background-color: var(--red-color);
+    width: 20px; height: 20px;
+    position: absolute; 
+    left: 500px; top:-10px;
+}
+
+.New_student .Save{
+    width: 100px; height: 40px;
+    border-radius: 20px;
+    background-color: var(--first-color);
+    color: var(--first-font-color);
+    margin-bottom: 50px;
+    position: relative;
+    left: 210px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    font-size: 15px;
+}
+.New_student .Save:hover{
+    background-color: var(--green-color);
+    color: var(--first-font-color);
+}
+.New_student input[type=text]{
+    width: 240px; height: 35px; border-radius: 10px; border: solid 1px;
+    margin: 12px;
+    padding-left: 10px;
+    opacity: 0.6;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+.New_student input[type=date]{
+    width: 240px; height: 35px; border-radius: 10px; border: solid 1px;
+    margin: 12px;
+    padding-left: 10px;
+    opacity: 0.6;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+
+.New_student input[type=text]:focus{
+    background-color: var(--Logo-color);
+    color: var(--secend-font-color);
+}
+/* 0770505560  dev*/
+.form_student{
+    position: relative;
+    left: 10px;
+    top: 30px;
+}
+.New_student h2{
+    position: relative;
+    top: -20px; left: 180px;
+    font-size: 30px; opacity: 0.7;
+    color: var(--secend-font-color);
+}
+.New_student label{
+    color: var(--first-font-color);
+    font-size: 15px;
+}
+.New_student span{
+    color: var(--first-font-color);
+    font-size: 22px;
+}
+.lieu_de_naissance{
+    position: relative;
+    left: 265px; bottom: 80px;
+}
+.Sexe{
+    position: relative;
+    bottom: 50px;
+}
+#selectsexe{
+    width: 100px; height: 40px; border-radius: 20px; border: solid 2px;
+    opacity: 0.6;
+    position: relative;
+    left: 70px; bottom: 78px;
+    border:solid var(--first-font-color);
+    font-size: 18px; font-weight: 700;
+}
+.Contacts{
+    position: relative;
+    bottom: 80px;
+}
+.Email{
+    position: relative;
+    bottom: 80px;
+}
+.Tel_etud{
+    position: relative;
+    left: 260px; bottom: 160px;
+}
+.Tel_par{
+    position: relative;
+    bottom: 150px;
+}
+.info_Acd{
+    position: relative;
+    bottom: 150px;
+}
+#selectsexe{
+    width: 240px; height: 40px;
+    border-radius: 30px;
+    border: solid 2px var(--first-font-color);
+    font-size: 16px;
+    font-weight: 750;
+    color: var(--secend-font-color);
+    opacity: 0.6;
+}
+#selectLevel{
+    width: 240px; height: 40px;
+    border-radius: 30px;
+    border: solid 2px var(--first-font-color);
+    font-size: 16px;
+    font-weight: 750;
+    color: var(--secend-font-color);
+    opacity: 0.6;
+}
+#selectcours{
+    width: 240px; height: 40px;
+    border-radius: 30px;
+    border: solid 2px var(--first-font-color);
+    font-size: 16px;
+    font-weight: 750;
+    color: var(--secend-font-color);
+    opacity: 0.6;
+}
+.selectcours1{
+    width: 240px; height: 30px;
+    position: relative;
+    top: -225px; left:260px;
+    z-index: 300;
+}
+.nivo{
+    position: relative;
+    bottom: 150px;
+}
+.cour{
+    position: relative;
+    left: 260px; bottom: 225px;
+}
+.info_add{
+    position: relative;
+    bottom: 220px;
+}
+.prblm_mental{
+    position: relative;
+    bottom: 220px; left: 30px;
+}
+#prblm_mental{
+    width: 450px;
+}
+.prblm_phy{
+    position: relative;
+    bottom: 220px; left: 30px;
+}
+#prblm_phy{
+    width: 450px;
+}
+select{
+    padding-left: 10px;
+}
+.erorr{
+    position: absolute;
+    bottom: 250px; left: 150px;
+}
+.erorr h3{
+        color: var(--red-color);
+}
+.Divpreview{
+    width: 200px;  height: 200px;
+    position: absolute;
+    left: 300px; top: 40px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+ #file{
+    position: absolute;
+    width: 10px;
+    z-index: 5;
+    display: none;
+} 
+
+#preview{
+    position: relative;
+    width: 200px; height: 200px;
+    border-radius: 40px;
+}
+.add_img{
+    position: absolute;
+    left: 65px; top:60px;
+    opacity: 0.2;
+}
+.add_img:hover{
+    opacity: 1;
+}
+
+/* ========================= daily Paiement ============================= */
+
+.Container_etudpay{
+    background: var(--first-color);
+    width:var(--PayEtud-width); height: 420px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    position: relative;
+    left: 20px; top: -417px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+.Container_etudpay h3{
+    color: var(--first-font-color);
+    padding: 10px;
+}
+.Container_etudpay table{
+    text-align: center;
+    width:var(--PayEtud-width);
+    border-collapse: collapse;
+}
+.tr-one{
+    background: var(--table-color);
+    height: 45px;
+    border: none;
+    color: var(--table-text);
+}
+.tr-two{
+    color: var(--secend-text);
+    height: 45px;
+    border: none;
+}
+.tr-two:hover{
+    background: var(--secend-font-color);
+    color: var(--table-text);
+}
+
+/* ========================= Daily_Pointing ============================= */
+
+.Daily_Pointing{
+    background: var(--first-color);
+    width:var(--Pointing-width); height: 520px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    position: relative;
+    left: 20px; bottom: 390px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+.Daily_Pointing h3{
+    color: var(--first-font-color);
+    padding: 10px;
+}
+.Daily_Pointing table{
+    text-align: center;
+    width:var(--Pointing-width);
+    border-collapse: collapse;
+}
+.tr-one{
+    background: var(--table-color);
+    height: 45px;
+    border: none;
+    color: var(--table-text);
+}
+.tr-two{
+    color: var(--secend-text);
+    height: 45px;
+    border: none;
+}
+.tr-two:hover{
+    background: var(--secend-font-color);
+    color: var(--table-text);
+}
+
+/* ========================= Students-Container ============================= */
+
+
+.Total_stud{
+    width: var(--MainStud-width); height: 620px;
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    position: relative; 
+    left: var(--MainStud-left); top: 110px;                 
+    border-radius: 30px;
+    margin-bottom: 170px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+.Total_stud h3{
+    position: relative;
+    left: 25px;
+    top: 25px;
+    color: var(--first-font-color);
+}
+.Total_stud form{
+    position: relative;
+    top: -10px; right: 80px;
+    display: inline;
+}
+.Total_stud form input[type=search]{
+    width: 200px; height: 30px;
+    position: relative;
+    left: 450px;
+    border-radius: 10px;
+    border: solid 2px var(--table-color);
+    padding-left: 10px;
+}
+.Total_stud form select{
+    width: 80px; height: 30px;
+    position: relative;
+    left: 460px;
+    border-radius: 10px;
+    border: solid 2px var(--table-color);
+
+}
+.Total_stud button{
+    position: relative;
+    left: var(--left-button-form);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: var(--first-color);
+}
+.Total_stud button:hover{
+    background: var(--secend-text);
+    color: var(--table-text);
+}
+.Total_stud img{
+    width: 25px;
+}
+.Container_Stud{
+    width: 140px; height: 75px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    background-color: var(--first-color);
+    position: relative; 
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    color: var(--first-font-color);
+}
+.Block_button{
+    position: relative;
+    left: 260px;
+    top: -30px;
+}
+.Container_Stud:hover{
+    background: var(--secend-font-color);
+    color: white;
+}
+.title_stud{
+    position: relative;
+    top: 10px;
+}
+.number_stud{
+    position: relative;
+    top: 20px;
+
+}
+
+.Main_Stud ul{
+    display:flex;
+    width: var(--Stud-list-width); height: 100px;
+    overflow:auto ;
+    position: relative;
+    left: var(--Stud-list-left); top: 100px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+.Main_Stud ul::-webkit-scrollbar{
+    width: 10px; height: 5px;
+}
+
+.Main_Stud h2{
+    position: relative;
+    left: var(--Stud-title-left); top: 100px;
+    color: var(--first-font-color);
+}
+
+.Total_stud table{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.tr-on{
+    background: var(--table-color);
+    color: var(--table-text);
+    text-align: center;
+    height: 40px;
+}
+.tr-tw{
+    text-align: center;
+    height: 50px;
+    color: var(--secend-text);
+}
+.tr-tw:hover{
+    background: var(--secend-text);
+    color: var(--table-text);
+}
+/* ========================= Professeur-Container ============================= */
+
+.container_prof{
+    width:var(--Prof-container-width); height: var(--Prof-container-height);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    background-color: var(--first-color);
+    position: relative;
+    left: var(--Prof-container-left); top: var(--Prof-container-top);
+    display: inline-table;
+    margin: 13px;
+    border-radius: 20px;
+    color: var(--secend-font-color);
+    text-align: center;
+}
+.container_prof:hover{
+    background: var(--secend-font-color);
+    color: white;
+}
+
+.container_prof h3{
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+}
+.container_prof h4{
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+}
+
+.Total_prof{
+    width: var(--MainStud-width); height: 620px;
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    position: relative; 
+    left: var(--MainStud-left); top: 110px;                 
+    border-radius: 30px;
+    margin-bottom: 170px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+.Total_prof h3{
+    position: relative;
+    left: 25px;
+    top: 25px;
+    color: var(--first-font-color);
+}
+.Total_prof_form{
+    display: inline-flex;
+}
+.Total_prof_form input[type=search]{
+    width: 200px; height: 30px;
+    position: relative;
+    left: 450px;
+    border-radius: 10px;
+    border: solid 2px var(--table-color);
+    padding-left: 10px;
+}
+.Total_prof_form select{
+    width: 80px; height: 30px;
+    position: relative;
+    left: 460px;
+    border-radius: 10px;
+    border: solid 2px var(--table-color);
+
+}
+.Total_prof_form button{
+    position: relative;
+    left: var(--left-button-form);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: var(--first-color);
+}
+.Total_prof button{
+    position: relative;
+    left: var(--left-button-form);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: var(--first-color);
+}
+.Total_prof button:hover{
+    background: var(--secend-text);
+    color: var(--table-text);
+}
+.Total_prof img{
+    width: 25px;
+}
+
+.Total_prof form button:hover{
+    background: var(--secend-text);
+    color: var(--table-text);
+}
+.Total_prof img{
+    width: 25px;
+}
+.Total_prof table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+/* ========================= classes-Container ============================= */
+
+.Main_classes{
+    position: relative;
+    left: var(--Main-class_left); top: var(--Main-class_Top);
+}
+.BigContainer_classes{
+    width: var(--BigContainer-class_width); height: var(--BigContainer-class_height);
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    position: relative; 
+    left: 170px; top: 70px;
+    border-radius: 50px;
+    margin-bottom: 180px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.title_class{
+    position: relative;
+    left: 600px; top:70px;
+}
+
+.Container_class{
+    width:var(--Container-class_width); height:var(--Container-class_height);
+    background: linear-gradient(red,rgb(255, 39, 39));
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    margin: 25px;
+    display: inline-block;
+    text-align: center;
+    color: var(--table-text);
+}
+.Container_class:hover{
+    width:var(--Container-class_width_hover); height:var(--Container-class_height_hover);
+}
+
+.Container_class1{
+    width:var(--Container-class_width); height:var(--Container-class_height);
+    background: var(--body-color);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: -7px;
+    border-radius: 20px;
+    margin: 25px;
+    display: inline-block;
+    text-align: center;
+    color: var(--first-font-color);
+}
+.Container_class1:hover{
+    background: var(--secend-font-color);
+    color: var(--table-text);
+}
+
+.Container_class1 img{
+    position: relative;
+    top: 23px;
+}
+.Container_class1 h2{
+    position: relative;
+    top: 23px;
+}
+.Container_class h2{
+    position: relative;
+    top: 10px;
+    text-transform: lowercase;
+}
+.Container_class h3{
+    position: relative;
+    top: 40px;
+}
+.Container_class h4{
+    position: relative;
+    top: 25px;
+}
+
+.statut_class_nav{
+    position: relative;
+    left: 1000px; top: 25px;
+    color: var(--first-font-color);
+}
+.Vide{
+    width: 20px; height: 20px;
+    background: green;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+    left: 0px; top: 4px;
+
+}
+.Complet{
+    width: 20px; height: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    left: 0px; top: 4px;
+}
+.NewClass{
+    width: 500px; height: 500px;
+    background: var(--first-color);
+    position: fixed;
+    left: 420px; bottom: 100px;
+    border-radius: 40px;
+    z-index: 15;
+    box-shadow: 0px 0px 10px 3000px rgba(0, 0, 0, 0.8);
+}
+.Form_Class input[type=text]:nth-of-type(1){
+    width: 400px; height: 40px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: solid var(--first-font-color) 2px;
+    padding-left: 10px;
+    text-transform: lowercase;
+}
+.Form_Class input[type=text]:nth-of-type(2){
+    width: 200px; height: 40px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: solid var(--first-font-color) 2px;
+    padding-left: 10px;
+    text-transform: lowercase;
+}
+.Form_Class select{
+    width: 190px; height: 44px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: solid var(--first-font-color) 2px;
+    padding-left: 10px;
+
+}
+.Form_Class input[type=submit]{
+    position: relative;
+    left: 120px; top: 30px;
+    width: 200px; height: 30px;
+    margin: 15px;
+    border-radius: 20px;
+    border: none;
+    background: var(--green-color);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--table-text);
+}
+.Form_Class input[type=submit]:hover{
+    background: var(--secend-font-color);
+}
+#closeNewStudent{
+    background:red;
+    width: 20px; height: 20px; 
+    border: none;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    right: 20px; top: 20px;
+    z-index: 16;
+
+}
+#closeNewStudent:hover{
+    background: red;
+    width: 22px; height: 22px; 
+}
+
+.Note{
+    width: 400px; height: 100px;
+    margin-left: 25px;
+    border: solid var(--first-font-color) 2px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    resize: none;
+}
+.Form_Class{
+    position: relative;
+    left: 10px; top: 50px;
+}
+.NewClass h1{
+    position: relative;
+    left: 110px; top: 20px;
+}
+
+.Container_class button{
+    position: relative;
+    width: 20px; height: 20px;
+    border: none;
+    background: none;
+    font-size: 15px;
+    color: var(--first-font-color);
+
+}
+.Container_class button:hover{
+    color: var(--table-text);
+}
+
+.cours_delete{
+    left: 60px; top: 5px;
+}
+.cours_update{
+    left: 63px; top: 5px;
+}
+
+.alert_Newclass{
+    text-align: center;
+    width: 400px; height: 170px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3000px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 300px; left: 465px;
+    background: var(--green-color);
+    color: white;
+    padding-top:30px;
+    z-index: 1000;
+}
+.done_image{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+ 
+/* ========================= cours-Container ============================= */
+
+.Main_cours{
+    color: var(--secend-font-color);
+}
+.Main_cours h1{
+    font-size: 25px;
+    position: relative;
+    left: var(--text-h1-cours-left); top: 100px;
+}
+
+.container_cours{
+    width: 40%; height: 600px;
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    position: relative; 
+    left:var(--cours-Main-left); top: var(--cours-Main-top);
+    border-radius: 50px;
+    text-align: center;
+}
+.title{
+    width: 500px; height: 45px; 
+    color: var(--table-text);
+    border-radius: 15px;
+    position: absolute;
+    left: 20px; top:10px;
+    animation: gradient1 5s ease infinite;
+}
+
+@keyframes gradient1{
+    0%{
+        background-position: 0% 50%;
+        background: #ff083d;
+    }
+    50%{
+        background-position: 100% 50%;
+        background: #ff9101;
+
+    }
+    100%{
+        background-position: 0% 50%;
+        background: #ff083d;
+
+    }
+}
+@keyframes gradient2{
+    0%{
+        background-position: 0% 50%;
+        background: #185ADB;
+    }
+    50%{
+        background-position: 100% 50%;
+        background: #ac00e0;
+
+    }
+    100%{
+        background-position: 0% 50%;
+        background: #185ADB;
+
+    }
+}
+@keyframes gradient3{
+    0%{
+        background-position: 0% 50%;
+        background: #2ec400;
+    }
+    50%{
+        background-position: 100% 50%;
+        background: #525252;
+
+    }
+    100%{
+        background-position: 0% 50%;
+        background: #2ec400;
+
+    }
+}
+
+.Total_student{
+    width: 200px; height: 200px; 
+    color: var(--table-text);
+    border-radius: 20px;
+    position: absolute;
+    left: 20px; top: 70px;
+    animation: gradient1 5s ease infinite;
+}
+.Proffesseur_number{
+    width: 300px; height: 200px; 
+    background-color:#185ADB;
+    color: var(--table-text);
+    border-radius: 20px;
+    position: absolute;
+    left: 230px; top: 70px;
+    animation: gradient2 5s ease infinite;
+
+}
+.Proffesseur_Name{
+    width: 335px; height: 150px; 
+    background-color: #06af00;
+    color: var(--table-text);
+    border-radius: 20px;
+    position: absolute;
+    left: 20px; top: 285px;
+    animation: gradient2 5s ease infinite;
+
+}
+.Paiement_dure{
+    width: 150px; height: 150px; 
+    background-color: var(--secend-font-color);
+    color: var(--table-text);
+    border-radius: 20px;
+    position: absolute;
+    left: 365px; top: 285px;
+    animation: gradient1 5s ease infinite;
+}
+.Description{
+    width: 500px; height: 130px; 
+    background-color:#ec7e00;
+    color: var(--table-text);
+    border-radius: 20px;
+    position: absolute;
+    left: 20px; top: 450px;
+    animation: gradient3 5s ease infinite;
+
+}
+
+.Total_cours{
+    width: var(--total-cours-width); height: var(--total-cours-height);
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    margin: 15px;
+    float: left;
+
+}
+.Total_cours img{
+    position: relative;
+    top: 20px;
+}
+.Total_cours h3{
+    position: relative;
+    top: 20px;
+}
+
+.Total_cours h4{
+    position: relative;
+    top: 10px;
+    text-transform: lowercase;
+}
+
+.Total_cours h2{
+    position: relative;
+    top: 15px;
+}
+.Total_cours h5{
+    position: relative;
+    top: 10px;
+    margin-top: 10px;
+}
+
+.Total_cours:hover{
+    background-color: var(--secend-font-color);
+    color: var(--table-text);
+}
+.Total_cours button{
+    position: relative;
+    width: 20px; height: 20px;
+    border: none;
+    background: none;
+    font-size: 15px;
+    color: var(--first-font-color);
+
+}
+.Total_cours button:hover{
+    color: var(--table-text);
+}
+
+.cours_delete{
+    left: 60px; top: 5px;
+}
+.cours_update{
+    left: 63px; top: 5px;
+}
+
+.cours{
+    display: inline-block;
+    width: var(--cours-width); height:var(--cours-height);
+    position: relative;
+    left:var(--cours-left) ; top:var(--cours-top) ;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+.NewCours{
+    width: 500px; height: 500px;
+    background: var(--first-color);
+    position: fixed;
+    left: 420px; bottom: 100px;
+    border-radius: 40px;
+    z-index: 15;
+    box-shadow: 0px 0px 10px 3000px rgba(0, 0, 0, 0.8);
+}
+.Form_Cours{
+    position: relative;
+    left: 10px; top: 50px;
+}
+.NewCours h1{
+    position: relative;
+    left: 150px; top: 20px;
+}
+
+.Form_Cours input[type=text]:nth-of-type(1){
+    width: 400px; height: 40px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: solid var(--first-font-color) 2px;
+    padding-left: 10px;
+    text-transform: lowercase;
+}
+.Form_Cours input[type=text]:nth-of-type(2){
+    width: 200px; height: 40px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: solid var(--first-font-color) 2px;
+    padding-left: 10px;
+    text-transform: lowercase;
+}
+.Form_Cours select{
+    width: 190px; height: 44px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: solid var(--first-font-color) 2px;
+    padding-left: 10px;
+
+}
+.Form_Cours input[type=submit]{
+    position: relative;
+    left: 120px; top: 30px;
+    width: 200px; height: 30px;
+    margin: 15px;
+    border-radius: 20px;
+    border: none;
+    background: var(--green-color);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--table-text);
+}
+.Form_Cours input[type=submit]:hover{
+    background: var(--secend-font-color);
+}
+
+
+#closeNewStudent{
+    background:red;
+    width: 20px; height: 20px; 
+    border: none;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    right: 20px; top: 20px;
+    z-index: 16;
+
+}
+#closeNewStudent:hover{
+    background: red;
+    width: 22px; height: 22px; 
+}
+
+.Descreption{
+    width: 400px; height: 100px;
+    margin-left: 25px;
+    border: solid var(--first-font-color) 2px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    resize: none;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+.Descreption:focus::placeholder {
+    color: transparent;
+  }
+
+
+/* ========================= frais-Container ============================= */
+
+.Main_frais{
+    position: relative; 
+    border-radius: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+    top: 100px;
+}
+.Container_Frais_small{
+
+    width: 350px; height: 350px;
+    background: var(--first-color);
+    display: inline-block;
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+    left: 90px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    
+}
+
+.Container_Frais_small h2{
+    margin-bottom: 30px;
+    color: var(--table-text);
+}
+.Container_Frais_small h3{
+    margin: 15px;
+}
+.Container_Frais_small button{
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.Container_Finance{
+    width: 1100px; height: 500px;
+    background: var(--first-color);
+    position: relative; 
+    border-radius: 20px;
+    margin-bottom: 150px;
+    text-align: center;
+    top: 20px; left: 220px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    overflow-x: none;
+    overflow-y:scroll;
+
+}
+.Container_Finance table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.descr{
+    width: 200px;
+    padding: 10px;
+
+}
+.tr-tw td{
+    padding: 10px;
+}
+/* ========================= Login-Container ============================= */
+
+.login{
+    position: relative;
+    background-image: url('../image/Educ.jpg');
+    z-index: 0;
+    width: 100%; height: 100vh;
+    color: #185ADB;
+}
+.login h1{
+    color: #185ADB;
+}
+
+.login form{
+    width: 500px; height:77.9vh;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+    padding-top: 150px;
+    background: var(--table-text);
+
+}
+.login input[type=email]{
+    position: relative;
+    top: 30px;
+    width: 270px; height: 35px;border-radius: 20px; border: none;
+    padding-left:20px;
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: 15px;
+    left:-35px;
+}
+.login input[type=password]{
+    position: relative;
+    top: 70px;
+    width: 270px; height: 35px;border-radius: 20px; border: none;
+    padding-left:20px;
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: 15px;
+    left: -50px;
+}
+.login input[type=submit]{
+    position: relative;
+    top:    130px;
+    width: 200px; height: 30px;border-radius: 20px; border: none;
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: 15px;
+    left: -30px;
+
+}
+.login input[type=submit]:hover{
+    transition: 700ms;
+    background: var(--Logo-color);
+}
+
+.Err{
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    top: 200px; left: -10px;
+    border-radius: 20px;
+    color: red;
+}
+
+.Pass_login{
+    position: relative;
+    top: 30px; left: 30px;
+}
+.Email_login{
+    position: relative;
+    top: -10px; left: 20px;
+}
+
+
+/* ========================= Profile-Container ============================= */
+
+.ProfileOpen{
+    width: 800px; height: 300px;
+    position: fixed;
+    left: 300px; top: 250px;
+    z-index: 200;
+    background: var(--body-color);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3000px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+.admin_Object{
+    width: 180px;
+    height: 180px;
+    background:var(--first-color);
+    color: var(--Logo-color);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    position: relative;
+    margin: 25px;
+    opacity: 0.9;
+}
+.admin_Object h4:nth-of-type(1){
+
+    position: relative;
+    top: 45px;
+
+}
+.admin_Object:hover{
+ background: var(--secend-font-color);
+}
+
+.admin_image{
+    width: 90px; height: 90px;
+    position: relative;
+    z-index: 300;
+    top: 30px;
+    border-radius: 50%;
+    border: solid 2px;
+
+}
+.admin_Object:nth-of-type(1){
+    padding-top: 40px;
+    height: 140px;
+}
+.admin_Object:nth-of-type(1):hover{
+    background: var(--color-theme);
+}
+
+.display_admin{
+    display: inline-flex;
+    position: relative;
+    top: 40px;
+}
+.ProfileOpen h2{
+    color: var(--first-font-color);
+    position: fixed;
+    z-index: 400;
+    right: 570px; top: 260px;
+}
+.close_Admin{
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    border: none;
+    background: red;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    right: 275px; top: 265px;
+
+}
+.close_Admin:hover{
+    width: 17px; height: 17px;
+    background: black;
+}
+
+.admin_Object button:nth-of-type(1){
+    width: 20px; height: 20px;
+    background: none;
+    border: none;
+    margin: 2px;
+    position: absolute;
+    top: 3px; left: 130px;
+    color: var(--Logo-color);
+    z-index: 500;
+}
+.admin_Object button:nth-of-type(2){
+    width: 20px; height: 20px;
+    background: none;
+    border: none;
+    margin: 2px;
+    position: absolute;
+    top: 3px; left: 150px;
+    color: var(--Logo-color);
+    z-index: 500;
+}
+
+.admin_Object button:hover{
+    color: var(--table-text);
+}
+
+/* ========================= Setting-Container ============================= */
+
+.SettingOpen{
+    width: 200px; height: 135px;
+    position: fixed;
+    left: 1150px; top: 80px;
+    z-index: 200;
+    background: var(--Logo-color);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+}
+.SettingOpen ul{
+    position: relative;
+    top: 10px;
+    list-style-type: none;
+}
+.SettingOpen li{
+ width: 175px; height: 35px;
+ margin-top: 5px;margin-bottom: 5px;
+padding-top: 15px;
+color: var(--table-text);
+padding-left: 25px;
+
+}
+.SettingOpen li:hover{
+    background: #202020;
+}
+
+
+/* ========================= Daily-Time-Container ============================= */
+
+/* ========================= Paiement Etud-Container ============================= */
+   
+    .Paiment_etud{
+        width: 500px; height: 500px;
+        background: var(--first-color);
+        box-shadow: 0px 0px 10px 3000px rgba(0, 0, 0, 0.8);
+        z-index: 300;
+        position: fixed;
+        right: 400px; top: 120px;
+        border-radius: 20px;
+    }
+    .Paiment_etud h2{
+        position: relative;
+        left: 140px; top: 20px;
+        color: var(--secend-font-color);
+        opacity: 0.8;
+    }
+    .Paiment_etud button{
+        width: 20px;
+        height: 20px;
+        background: red;
+        border-radius: 50%;
+        float: right;
+        margin-right: 20px;
+        margin-top: -10px;
+        z-index: 400;
+    }
+    .Paiment_etud button:hover{
+        background: var(--secend-font-color);
+    }
+    .Paiment_etud select{
+        width: 300px; height: 40px;
+        border-radius: 30px;
+        border: solid 2px var(--first-font-color);
+        font-size: 16px;
+        font-weight: 750;
+        color:black;
+        position: relative;
+        left:100px; top: 80px;
+    }
+    .Multiselect_StudPay{
+        position: relative;
+        top: 120px;  left: 20px;
+        width: 220px;        
+    }
+    .Paiment_etud input[type=text]{
+        width: 200px; height: 38px; border-radius: 5px; border: solid 2px;
+        margin: 12px;
+        padding-left: 10px;
+        font-size: 17px;
+        font-weight: 750;    
+    }
+    .Paiment_etud input[type=submit]{
+        width: 200px; height: 35px; border-radius: 5px; border: solid 2px;
+        margin: 12px;
+        font-size: 17px;
+        font-weight: 750;    
+        position: relative;
+        right: 100px; top: 280px;
+
+    }
+    .Paiment_etud input[type=submit]:hover{
+        background: var(--green-color);
+    }
+
+    #paiementStud_value{
+        position: relative;
+        left: 240px;
+        top: 49px;
+    }
+    .Paiment_etud label:first-of-type{
+        position: relative;
+        left: 150px; top: 70px;
+        color: var(--table-color);
+    }
+    .Paiment_etud label:nth-of-type(2){
+        position: relative;
+        right: 280px; top: 125px;
+        color: var(--table-color);
+    }
+    .Paiment_etud label:nth-of-type(3){
+        position: relative;
+        left: 250px; top: 57px;
+        color: var(--table-color);
+    }
+
+    /* ========================= Paiement Prof-Container ============================= */
+
+    .Paiment_prof{
+        width: 500px; height: 500px;
+        background: var(--first-color);
+        box-shadow: 0px 0px 10px 3000px rgba(0, 0, 0, 0.8);
+        z-index: 300;
+        position: fixed;
+        right: 400px; top: 120px;
+        border-radius: 20px;
+    }
+    .Paiment_prof h3{
+        position: relative;
+        left: 110px; top: 20px;
+        color: var(--secend-font-color);
+        opacity: 0.8;
+    }
+    .Paiment_prof button{
+        width: 20px;
+        height: 20px;
+        background: red;
+        border-radius: 50%;
+        float: right;
+        margin-right: 20px;
+        margin-top: -10px;
+        z-index: 400;
+    }
+    .Paiment_prof button:hover{
+        background: var(--secend-font-color);
+    }
+    .Paiment_prof select{
+        width: 220px; height: 40px;
+        border-radius: 30px;
+        border: solid 2px var(--first-font-color);
+        font-size: 16px;
+        font-weight: 750;
+        color:black;
+        position: relative;
+        left:20px; top: 52px;
+        margin: 5px;
+    }
+    .Paiment_prof input[type=text]{
+        width: 400px; height: 38px;
+        border-radius: 5px; border: solid 2px;
+        padding-left: 10px;
+        font-size: 17px;
+        font-weight: 750; 
+        position: relative;
+        left: 40px; top: 120px; 
+    }
+    .Paiment_prof input[type=submit]{
+        width: 200px; height: 38px; border-radius: 5px; border: solid 2px;
+        margin: 12px;
+        font-size: 17px;
+        font-weight: 750;    
+        position: relative;
+        left: 130px; top: 260px;
+    }
+    .Paiment_prof input[type=submit]:hover{
+        background: var(--green-color);
+    }
+
+    #paiementStud_value{
+        position: relative;
+        left: 240px;
+        top: 49px;
+    }
+    .Paiment_prof label:first-of-type{
+        position: relative;
+        left: 30px; top: 70px;
+        color: var(--table-color);
+    }
+    .Paiment_prof label:nth-of-type(2){
+        position: relative;
+        left: 260px; top: 50px;
+        color: var(--table-color);
+    }
+    .Paiment_prof label:nth-of-type(3){
+        position: relative;
+        left: 40px; top: 110px;
+        color: var(--table-color);
+    }
+
+/* ========================= New_depense-Container ============================= */
+
+.New_depense{
+    width: 500px; height: 500px;
+    background: var(--first-color);
+    box-shadow: 0px 0px 10px 3000px rgba(0, 0, 0, 0.8);
+    z-index: 300;
+    position: fixed;
+    right: 400px; top: 120px;
+    border-radius: 20px;
+}
+.New_depense h2{
+    position: relative;
+    left: 140px; top: 20px;
+    color: var(--secend-font-color);
+    opacity: 0.8;
+}
+.New_depense button{
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    float: right;
+    margin-right: 20px;
+    margin-top: -10px;
+    z-index: 400;
+}
+.New_depense button:hover{
+    background: var(--secend-font-color);
+}
+.New_depense select{
+    width: 300px; height: 40px;
+    border-radius: 30px;
+    border: solid 2px var(--first-font-color);
+    font-size: 16px;
+    font-weight: 750;
+    color:black;
+    position: relative;
+    left:100px; top: 80px;
+}
+.New_depense input[type=text]{
+    width: 400px; height: 38px; border-radius: 5px; border: solid 2px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 750;   
+}
+.Name_depense{
+    position: relative;
+    left: 40px; top: 50px;
+}
+
+#Depense_Values{
+    position: relative;
+    left: 40px; top: 80px;
+}
+.New_depense input[type=submit]{
+    width: 200px; height: 35px; border-radius: 5px; border: solid 2px;
+    margin: 12px;
+    font-size: 17px;
+    font-weight: 750;    
+    position: relative;
+    left:130px; top: 130px;
+
+}
+.New_depense input[type=submit]:hover{
+    background: var(--green-color);
+}
+
+.New_depense label:first-of-type{
+    position: relative;
+    left: 40px; top: 40px;
+    color: var(--table-color);
+}
+.New_depense label:nth-of-type(2){
+    width: 100%;
+    position: relative;
+    left: 40px; top: 70px;
+    color: var(--table-color);
+}
+.New_depense label:nth-of-type(3){
+    position: relative;
+    left: 40px; top: 110px;
+    color: var(--table-color);
+}
+.descreption_NewDepense{
+width: 400px; height: 100px;
+margin-left: 35px;
+border: solid var(--first-font-color) 2px;
+border-radius: 20px;
+font-size: 15px;
+padding: 10px;
+resize: none;
+position: relative;
+top: 120px;
+}
+
+/* ========================= New_Admin-Container ============================= */
+
+.New_admin{
+    width: 500px; height: 500px;
+    position: fixed;
+    background: var(--first-color);
+    z-index: 400;
+    box-shadow: 0px 0px 10px 3000px rgba(0, 0, 0, 0.8);
+    top: 130px; left: 400px;
+    border-radius: 20px;
+}
+
+.Divpreview1{
+    width: 200px;  height: 200px;
+    position: absolute;
+    left: 270px; top: 110px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+ #file1{
+    position: absolute;
+    width: 10px;
+    z-index: 5;
+    display: none;
+} 
+
+#preview1{
+    position: relative;
+    width: 200px; height: 200px;
+    border-radius: 40px;
+}
+.add_img1{
+    position: absolute;
+    left: 75px; top:65px;
+    opacity: 0.2;
+}
+.add_img1:hover{
+    opacity: 1;
+}
+.New_admin input[type=text]{
+    width: 200px; height: 35px; border-radius: 5px; border: solid 2px;
+    margin: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 750;
+    position: relative;
+    right: 120px; top: 20px;
+}
+.New_admin input[type=submit]{
+    width: 200px; height: 35px; border-radius: 5px; border: solid 2px;
+    margin: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 750;
+    position: relative;
+    right: 10px; top:120px;
+    background: var(--green-color);
+    opacity: 0.8;
+}
+.New_admin input[type=submit]:hover{
+    opacity: 1;  
+}
+
+#closeNewAdmin{
+    background:red;
+    width: 20px; height: 20px; 
+    border: none;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    float: right;
+    right: 15px; top: 15px;
+    z-index: 16;
+}
+#closeNewAdmin:hover{
+    background: red;
+    width: 22px; height: 22px; 
+}
+
+
